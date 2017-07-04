@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 
 
-print("Hello world")
-
 class Car:
     def __init__(self):
         self.speed = 0
@@ -10,4 +8,6 @@ class Car:
     def accelerate(self):
         self.speed += 1
 
-    
+
+
+
