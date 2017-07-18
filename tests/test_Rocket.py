@@ -4,11 +4,11 @@ import SpaceX
 class TestRocketMethods(unittest.TestCase):
 
     def setUp(self):
-        print("Setting up")
+        # print("Setting up")
         self.rocket = SpaceX.Rocket()
 
     def tearDown(self):
-        print("Tearing down")
+        # print("Tearing down")
         self.rocket = None
 
     def test_rocket_initial_values(self):
@@ -20,13 +20,8 @@ class TestRocketMethods(unittest.TestCase):
     def test_acceleration_throws_exception(self):
 
 
-        print("Testing exception raising")
+        # print("Testing exception raising")
         self.rocket.speed = 101
         with self.assertRaises(SpaceX.RocketException) as ar:
             self.rocket.accelerate()
 
-
-
-
-if __name__ == "__main__":
-    unittest.main()
