@@ -12,7 +12,7 @@ class TestCarMethods(unittest.TestCase):
         c.accelerate()
         self.assertEqual(c.speed, 1, "Acceleration tested")
 
+    def test_josNekaj(self):
+        pass
 
 
-if __name__ == '__main__':
-    unittest.main()
